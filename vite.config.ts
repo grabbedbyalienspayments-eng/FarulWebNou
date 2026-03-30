@@ -70,15 +70,6 @@ export default defineConfig({
     sourcemap: true,
     outDir: "dist",
     chunkSizeWarningLimit: 1000,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ["react", "react-dom"],
-          router: ["react-router-dom"],
-          gsap: ["gsap"],
-        },
-      },
-    },
   },
   resolve: {
     alias: {
